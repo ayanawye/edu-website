@@ -1,0 +1,29 @@
+@import "../../styles/variabless";
+
+.mentor {
+  padding: 100px 10px;
+}
+.container {
+  @include container;
+}
+.content {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+.image {
+  height: 500px;
+  width: calc(50% - 25px);
+  background: #cccccc;
+  border-radius: 8px;
+}
+.right{
+  width: calc(50% - 25px);
+}
+.desc{
+  margin: 30px 0 20px;
+}
+.btn{
+  width: 30%;
+  margin-top: 50px;
+}

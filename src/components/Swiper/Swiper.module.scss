@@ -1,0 +1,42 @@
+@import "../../styles/variabless";
+
+.swip {
+  padding: 0 10px;
+}
+.container {
+  @include container;
+}
+.content {
+  padding: 60px 10px;
+}
+.slide {
+  display: flex !important;
+  column-gap: 40px;
+}
+.image {
+  width: calc(35% - 20px);
+  height: 350px;
+  width: 330px;
+  background: #cccccc;
+}
+.right {
+  width: calc(65% - 20px);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: $accent-color;
+  & p:first-child {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 40px;
+  }
+  & p:last-child {
+    font-size: 14px;
+    line-height: 24px;
+    color: #808080;
+  }
+}
+.desc {
+  margin: 30px 0 8px;
+  font-weight: 500;
+}

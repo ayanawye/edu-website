@@ -1,0 +1,49 @@
+@import "../../styles/variabless";
+
+.late {
+  padding: 0 10px 160px;
+}
+.container {
+  @include container;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 24px;
+}
+.card {
+  width: calc(33% - 12px);
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  & .image {
+    height: 200px;
+    background: #cccccc;
+    border-radius: 4px;
+  }
+  .date {
+    display: flex;
+    column-gap: 8px;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 16px 0;
+    color: #808080;
+  }
+  .desc {
+    font-size: 16px;
+    line-height: 27px;
+    margin: 16px 0 20px;
+    color: #808080;
+  }
+  .read{
+    color: $primary-pink;
+  }
+  &:hover {
+    transform: scale(1.02);
+    background-color: $white-color;
+    box-shadow: 10px 10px 10px #00000040;
+  }
+}

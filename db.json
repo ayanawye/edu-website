@@ -1,0 +1,112 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Interpersonal skills - work better with others!",
+      "desc": "Tanah Air Team",
+      "buttonName": "Web Developer"
+    },
+    {
+      "id": 2,
+      "title": "How to become an Expert Web Developer",
+      "desc": "Tanah Air Team",
+      "buttonName": "UI/UX Design"
+    },
+    {
+      "id": 3,
+      "title": "User Experience Design Essentials",
+      "desc": "Tanah Air Team",
+      "buttonName": "UX Research"
+    },
+    {
+      "id": 4,
+      "title": "Creating 3D Modelling in Blender ",
+      "desc": "Tanah Air Team",
+      "buttonName": "3D Design"
+    },
+    {
+      "id": 5,
+      "title": "Interpersonal skills - work better with others!",
+      "desc": "Tanah Air Team",
+      "buttonName": "Web Developer"
+    },
+    {
+      "id": 6,
+      "title": "How to become an Expert Web Developer",
+      "desc": "Tanah Air Team",
+      "buttonName": "UI/UX Design"
+    },
+    {
+      "id": 7,
+      "title": "User Experience Design Essentials",
+      "desc": "Tanah Air Team",
+      "buttonName": "UX Research"
+    },
+    {
+      "id": 8,
+      "title": "Creating 3D Modelling in Blender ",
+      "desc": "Tanah Air Team",
+      "buttonName": "3D Design"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "title": "Art & Design"
+    },
+    {
+      "id": 2,
+      "title": "Business"
+    },
+    {
+      "id": 3,
+      "title": "Copy Writing"
+    },
+    {
+      "id": 4,
+      "title": "Marketing"
+    },
+    {
+      "id": 5,
+      "title": "Programming"
+    },
+    {
+      "id": 6,
+      "title": "Photography"
+    },
+    {
+      "id": 7,
+      "title": "Videography"
+    },
+    {
+      "id": 8,
+      "title": "Personal Development"
+    }
+  ],
+  "articles": [
+    {
+      "id": 1,
+      "date": "3, Mei 2021",
+      "time": "3 min read",
+      "title": "Interpersonal skills - work better with others!",
+      "desc": "Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.",
+      "read": "Read More"
+    },
+    {
+      "id": 2,
+      "date": "3, Mei 2021",
+      "time": "3 min read",
+      "title": "Right Triangle Trigonometry Explained",
+      "desc": "Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.",
+      "read": "Read More"
+    },
+    {
+      "id": 3,
+      "date": "3, Mei 2021",
+      "time": "3 min read",
+      "title": "2 Reasons Why You’re Confusing Chemistry ",
+      "desc": "Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.",
+      "read": "Read More"
+    }
+  ]
+}

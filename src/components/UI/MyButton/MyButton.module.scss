@@ -1,0 +1,17 @@
+@import '../../../styles/variabless';
+
+.btn {
+  border: 1px solid $accent-color;
+  width: 100%;
+  height: 100%;
+  padding: 1vh 2%;
+  border-radius: 8px;
+  font-family: inherit;
+  font-weight: inherit;
+  &:hover{
+    background: $primary-pink;
+    transition: all 0.3s;
+    color: $white-color;
+    border-color: $primary-pink;
+  }
+}

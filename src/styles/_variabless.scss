@@ -1,0 +1,9 @@
+$accent-color: #1c3554;
+$primary-pink: #F72585;
+$white-color: #ffff;
+
+@mixin container {
+  max-width: 85%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
