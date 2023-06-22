@@ -1,0 +1,70 @@
+@import "../../styles/variabless";
+
+.mentor {
+  padding: 100px 0;
+}
+.container {
+  @include container;
+}
+.content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+.image {
+  height: 500px;
+  width: calc(50% - 10px);
+  background: url("../../assets/images/main.png") no-repeat center/contain;
+  border-radius: 8px;
+}
+.right{
+  width: calc(50% - 10px);
+  h2{
+    @extend .mid-title;
+    font-weight: 700;
+  }
+  p{
+    @extend .desc;
+  }
+}
+.desc{
+  margin: 30px 0 20px;
+}
+.btn{
+  width: 30%;
+  margin-top: 50px;
+}
+
+@media (max-width: 1500px){
+  .desc{
+    margin: 20px 0 10px;
+  }
+  .btn{
+    width: 50%;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 1100px){
+  .mentor{
+    padding: 0 0;
+  }
+  .desc{
+    margin: 10px 0 10px;
+  }
+  .btn{ 
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px){
+  .image {
+    width: 90%;
+    height: 300px;
+    transform: translateX(-30px);
+  }
+  .right {
+    width: 90%;
+    margin: 20px auto 0;
+  }
+}
