@@ -4,6 +4,7 @@ import categories from "./reducer/categories";
 import articles from "./reducer/articles";
 import swiper from "./reducer/swiper";
 import footerInfo from "./reducer/footerInfo";
+import tab from "./reducer/tab";
 
 const store = configureStore({
     reducer: {
@@ -12,6 +13,7 @@ const store = configureStore({
         articles,
         swiper,
         footerInfo,
+        tab,
     }
 })
 

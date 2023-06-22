@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import MyButton from "../UI/MyButton/MyButton";
 import s from "./Courses.module.scss";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
@@ -9,13 +9,9 @@ import { motion } from "framer-motion";
 const Courses = () => {
   const [count, setCounte] = useState(8)
   const { courses } = useSelector((state) => state.courses)
-  const tab = [
-    { id: 1, title: "All" },
-    { id: 2, title: "Business" },
-    { id: 3, title: "Art & Design" },
-    { id: 4, title: "Development" },
-    { id: 5, title: "Marketing" },
-  ]
+  const {tab} = useSelector(state => state.tab)
+
+
   const firstCourse = courses.slice(0, count)
   const desingCourse = courses.filter(
     (el) =>
@@ -33,7 +29,7 @@ const Courses = () => {
 
   const moreCourse = () => {
     if(courses.length === count){
-      setCounte(4)
+      setCounte(8)
     } else{
       setCounte(count + 4)
     }

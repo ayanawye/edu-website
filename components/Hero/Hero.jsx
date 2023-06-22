@@ -26,6 +26,7 @@ const textAnimation = {
   }),
 }
 
+
 const Hero = () => {
   const ref = useRef(null);
   const ref2 = useRef(null);

@@ -12,7 +12,6 @@ import SwiperCore, { Autoplay, Navigation } from "swiper/core";
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 import "swiper/css";
-
 import { Pagination } from "swiper";
 
 const textAnimation = {

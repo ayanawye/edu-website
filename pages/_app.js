@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }) {
     <ChakraProvider>
       <Provider store={store}>
         <Layout>
-          <Load />
+          <Load/>
           <Component {...pageProps} />
         </Layout>
       </Provider>

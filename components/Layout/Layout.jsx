@@ -7,6 +7,7 @@ import { getCategories } from "../../store/reducer/categories";
 import { getArticles } from "../../store/reducer/articles";
 import { getSwipers } from "../../store/reducer/swiper";
 import { getFooterInfo } from "../../store/reducer/footerInfo";
+import { getTabs } from "../../store/reducer/tab";
 
 const Layout = ({ children }) => {
   const dispatch = useDispatch()
@@ -17,6 +18,7 @@ const Layout = ({ children }) => {
     dispatch(getArticles())
     dispatch(getSwipers())
     dispatch(getFooterInfo())
+    dispatch(getTabs())
   }, [])
 
   return (

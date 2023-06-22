@@ -16,6 +16,7 @@ const textAnimation = {
 
 const Categories = () => {
   const { categories } = useSelector((state) => state.categories);
+  
   return (
     <motion.div initial="hidden" whileInView="visible" className={s.categories}>
       <div className={s.container}>
