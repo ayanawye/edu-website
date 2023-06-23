@@ -12,8 +12,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  &__box {
-    max-width: 80%;
+  &_title {
+    h2 {
+      text-align: center;
+      margin-bottom: 5vh;
+    }
+  }
+  &_box {
+    width: 80%;
     margin: 0 auto;
     column-gap: 24px;
     display: flex !important;
@@ -21,19 +27,15 @@
     justify-content: center !important;
     align-items: center;
     row-gap: 10px;
+    &__tab {
+      width: calc(20% - 20px);
+      padding: 8px 0;
+      border-radius: 10px;
+      cursor: pointer;
+      @extend .button-text;
+    }
   }
-  h2 {
-    text-align: center;
-    margin-bottom: 5vh;
-  }
-  .button {
-    width: calc(20% - 19px);
-    padding: 8px;
-    border-radius: 10px;
-    cursor: pointer;
-    @extend .button-text;
-  }
-  .more {
+  &_btn_more{
     display: flex;
     margin: 0 auto;
     width: 20%;
@@ -55,19 +57,18 @@
   border-radius: 10px;
   padding: 10px;
   cursor: pointer;
-  & .image {
+  &_image {
     height: 200px;
     border-radius: 4px;
     background: #4586d6;
-    .img {
-      height: 100%;
+    img{
       width: 100%;
-      object-fit: cover;
+      height: 100%;
       object-position: center;
-      border-radius: 4px;
+      object-fit: cover;
     }
   }
-  & .btn {
+  &_btn {
     cursor: pointer;
     width: 60%;
     position: relative;
@@ -80,28 +81,35 @@
     color: $white-color;
     background: #4586d6;
   }
-  & h4 {
-    @extend .description;
-  }
-  & p {
-    color: $primary-pink;
-    font-size: 12px;
-    line-height: 24px;
+  &_content {
+    h4 {
+      @extend .description;
+    }
+    p {
+      color: $primary-pink;
+      font-size: 12px;
+      line-height: 24px;
+    }
   }
   &:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
     background-color: $white-color;
     box-shadow: 10px 10px 10px #00000040;
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .content {
     padding: 70px 0;
-    .more {
+    &_btn_more {
       width: 30%;
       margin-top: 45px;
       margin-top: 30px;
+    }
+    &_box{
+      &__tab {
+        width: calc(25% - 20px);
+      }
     }
   }
   .cards {
@@ -122,11 +130,11 @@
 
 @media (max-width: 750px) {
   .content {
-    &__box {
+    &_box {
       column-gap: 15px;
-    }
-    .button {
-      width: calc(33% - 10px);
+      &__tab {
+        width: calc(33% - 10px);
+      }
     }
   }
   .cards {
@@ -139,15 +147,16 @@
 }
 @media (max-width: 550px) {
   .content {
-    .more {
+    &_btn_more {
       width: 40%;
       margin-top: 45px;
     }
-    &__box {
+    &_box {
+      width: 100%;
       column-gap: 15px;
-    }
-    .button {
-      width: calc(50% - 20px);
+      &__tab {
+        width: calc(50% - 20px);
+      }
     }
   }
   .cards {
@@ -156,5 +165,9 @@
   }
   .card {
     width: 90%;
+    &_image {
+      width: 100%;
+      margin: 0 auto;
+    }
   }
 }

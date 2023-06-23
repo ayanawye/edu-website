@@ -30,7 +30,7 @@ const Categories = () => {
               className={s.card}
             >
               <div
-                className={s.image}
+                className={s.card_image}
                 style={{
                   background: `url(${el.image}) no-repeat center/cover`,
                 }}

@@ -21,11 +21,11 @@ const Burger = () => {
       animate={isOpen ? "open" : "closed"}
       className={s.menu}
     >
-      <motion.div className={s.flex}>
+      <motion.div className={s.menu_flex}>
         <motion.button
           whileTap={{ scale: 0.97 }}
           onClick={() => setIsOpen(!isOpen)}
-          className={s.btn}>
+          className={s.menu_btn}>
           Меню
         </motion.button>
         <motion.div
@@ -36,7 +36,7 @@ const Burger = () => {
           onClick={() => setIsOpen(!isOpen)}
           transition={{ duration: 0.2 }}
           style={{ originY: 0.55 }}
-          className={s.svg}
+          className={s.menu_svg}
         >
           <svg width="15" height="15" viewBox="0 0 20 20" fill="#fff">
             <path d="M0 7 L 20 7 L 10 16" />

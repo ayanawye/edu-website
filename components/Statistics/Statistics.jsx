@@ -142,8 +142,8 @@ const Statistics = () => {
           )}
         </div>
       </div>
-      <div className={s.accent}>
-        <Image src={Accent} placeholder="blur" alt="accent" className={s.img} />
+      <div className={s.content_accent}>
+        <Image src={Accent} placeholder="blur" alt="accent"/>
       </div>
       <Mentor />
     </motion.div>

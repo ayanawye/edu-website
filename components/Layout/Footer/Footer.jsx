@@ -11,31 +11,30 @@ const Footer = () => {
     <footer className={s.footer}>
       <div className={s.container}>
         <div className={s.content}>
-          <div className={s.top}>
-            <div className={s.left}>
-              <div className={s.image}>
+          <div className={s.content_top}>
+            <div className={s.content_top__left}>
+              <div className={s.content_top__left_image}>
                 <Image
                   src={Logo}
-                  className={s.img}
                   alt="logo"
                   placeholder="blur"
                 />
               </div>
-              <p className={s.desc}>
+              <p className={s.content_top__left_desc}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
                 tristique placerat eleifend aliquam pellentesque facilisis
                 ultrices. Imperdiet mus urna egestas at tellus.{" "}
               </p>
             </div>
-            <div className={s.right}>
-              <div className={s.box}>
+            <div className={s.content_top__right}>
+              <div className={s.content_top__right_box}>
                 {footer.map((el) => (
                   <div key={el.id}>
-                    <p className={s.right_title}>{el.title}</p>
+                    <p className={s.content_top__right_title}>{el.title}</p>
                     {el.desc.map((li) => (
-                      <p className={s.info} key={li.id}>
+                      <a className={s.content_top__right_link} key={li.id}>
                         {li.name}
-                      </p>
+                      </a>
                     ))}
                   </div>
                 ))}
@@ -43,7 +42,7 @@ const Footer = () => {
                 {footer.map((el) => (
                   <Menu key={el.id}>
                     <MenuButton
-                      className={`${s.right_title} ${s.menu}`}
+                      className={`${s.content_top__right_title} ${s.content_top__right_menu}`}
                       as={Button}
                       rightIcon={<AiOutlineDown />}
                     >
@@ -60,8 +59,8 @@ const Footer = () => {
                 ))}
             </div>
           </div>
-          <div className={s.bottom}>
-            <div className={s.bottom_right}>
+          <div className={s.content_bottom}>
+            <div className={s.content_bottom__right}>
               <p>Privacy Policy</p>
               <p>Terms and Condition</p>
             </div>

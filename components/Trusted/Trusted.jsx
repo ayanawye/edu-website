@@ -10,12 +10,14 @@ const Trusted = () => {
     <div className={s.trust}>
       <div className={s.container}>
         <div className={s.content}>
+          <div className={s.content_title}>
           <h2>Trusted by Company</h2>
-          <div className={s.images}>
+          </div>
+          <div className={s.content_images}>
             {
               images.map(img => (
                 <div key={img.id} className={s.image}>
-                  <Image className={s.img}  placeholder='blur' src={img.src} alt={img.alt} />
+                  <Image placeholder='blur' src={img.src} alt={img.alt} />
                 </div>
               ))
             }

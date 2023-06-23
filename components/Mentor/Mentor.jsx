@@ -21,7 +21,7 @@ const Mentor = () => {
               hidden: { scale: 0 },
               visible: { scale: 1 },
             }}
-            className={s.image}
+            className={s.content_image}
           ></motion.div>
           <motion.div
             initial="hidden"
@@ -31,10 +31,10 @@ const Mentor = () => {
               hidden: { scale: 0 },
               visible: { scale: 1 },
             }}
-            className={s.right}
+            className={s.content_right}
           >
             <h2>Become an Mentor</h2>
-            <p className={s.desc}>
+            <p className={s.content_right__desc}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
               eu in orci, nunc amet libero. Nam scelerisque vestibulum bibendum
               a turpis.
@@ -52,7 +52,7 @@ const Mentor = () => {
               hidden: { scale: 0 },
               visible: { scale: 1 },
             }}
-            className={s.btn}>
+            className={s.content_right__btn}>
               <MyButton
                 style={{
                   background: "#F72585",

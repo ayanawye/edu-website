@@ -17,20 +17,20 @@ const Swip = () => {
               "--swiper-navigation-color": "#1C3554",
               "--swiper-navigation-size": "20px",
             }}
-            speed={1000}
+            speed={2000}
             navigation={true}
             pagination={{
               clickable: true,
             }}
-            autoplay={{ delay: 2000, disableOnInteraction: false }}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
             modules={[Navigation, Pagination, Autoplay]}
             className="mySwiper"
           >
             {
               swipers.map((swip) => (
                 <SwiperSlide key={swip.id} className={s.slide}>
-                  <div className={s.image} style={{background: `url("${swip.image}") no-repeat center/contain`}}></div>
-                  <div className={s.right}>
+                  <div className={s.slide_image} style={{background: `url("${swip.image}") no-repeat center/contain`}}></div>
+                  <div className={s.slide_text}>
                     <p>{swip.title}</p>
                     <p>{swip.author}</p>
                     <p>{swip.desc}</p>

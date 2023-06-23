@@ -19,39 +19,39 @@
   border-radius: 10px;
   padding: 10px;
   cursor: pointer;
-  & .image {
+  &_image {
     height: 200px;
     border-radius: 10px;
-    .img{
+    img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       object-position: center;
     }
   }
-  .text {
+  &_content {
     padding: 5px;
-  }
-  .date {
-    display: flex;
-    column-gap: 8px;
-    font-size: 14px;
-    line-height: 24px;
-    margin: 16px 0;
-    color: #808080;
-  }
-  h4 {
-    @extend .title-desc;
-    color: $accent-color;
-  }
-  .desc {
-    @extend .desc;
-    margin: 16px 0 20px;
-    color: #808080;
-  }
-  .read {
-    color: $primary-pink;
-    font-weight: 600;
+    & > div {
+      display: flex;
+      column-gap: 8px;
+      font-size: 14px;
+      line-height: 24px;
+      margin: 16px 0;
+      color: #808080;
+    }
+    h4 {
+      @extend .title-desc;
+      color: $accent-color;
+    }
+    &__desc {
+      @extend .description;
+      margin: 16px 0 20px;
+      color: #808080;
+    }
+    &__link {
+      color: $primary-pink;
+      font-weight: 600;
+    }
   }
   &:hover {
     transform: scale(1.02);

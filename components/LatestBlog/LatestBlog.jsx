@@ -29,17 +29,17 @@ const LatestBlog = () => {
               key={el.id}
               className={s.card}
             >
-              <div className={s.image}>
-                <img src={el.image} className={s.img} />
+              <div className={s.card_image}>
+                <img src={el.image} alt="image"/>
               </div>
-              <div className={s.text}>
-                <div className={s.date}>
+              <div className={s.card_content}>
+                <div>
                   <p>{el.date}</p>
                   <p>{el.time}</p>
                 </div>
                 <h4>{el.title}</h4>
-                <p className={s.desc}>{el.desc}</p>
-                <Link href="#" className={s.read}>
+                <p className={s.card__content__desc}>{el.desc}</p>
+                <Link href="#" className={s.card__content__link}>
                   {el.read}
                 </Link>
               </div>

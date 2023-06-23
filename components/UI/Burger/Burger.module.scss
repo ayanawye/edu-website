@@ -11,28 +11,28 @@
   position: relative;
   flex-direction: column;
   align-items: center;
-}
-.flex {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  background: $accent-color;
-  border-radius: 10px;
-  padding: 10px 20px;
-}
-.btn {
-  color: $white-color;
-  font-family: inherit;
-  border: none;
-  font-size: 18px;
-  font-weight: 700;
-  cursor: pointer;
-  width: 100%;
-  text-align: left;
-}
-.svg {
-  margin-top: 5px;
-  height: "fit-content";
+  &_flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: $accent-color;
+    border-radius: 10px;
+    padding: 10px 20px;
+  }
+  &_btn {
+    color: $white-color;
+    font-family: inherit;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+  }
+  &_svg {
+    margin-top: 5px;
+    height: "fit-content";
+  }
 }
 .ul {
   width: 100%;
@@ -47,24 +47,6 @@
     margin: 0;
     padding: 10px;
   }
-}
-.item {
-  width: 300px;
-  height: 300px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  background: $accent-color;
-  color: $accent-color;
-  font-size: 240px;
-  line-height: 260px;
-  font-weight: 700;
-  border-radius: 30px;
-}
-.active {
-  color: $accent-color;
-  transition: 0.3s;
-  font-weight: 500;
 }
 @media (max-width: 1100px) {
   .menu {
