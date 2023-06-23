@@ -8,14 +8,17 @@
   transition: 0.5s;
   font-family: "Montserrat", sans-serif;
 }
+
 body {
   background: #e5e5e5;
 }
+
 a {
   color: inherit;
   text-decoration: none;
   cursor: pointer;
 }
+
 button {
   background: none;
   border: none;
