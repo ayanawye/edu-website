@@ -1,0 +1,72 @@
+@import "../../styles/variabless";
+
+.categories {
+  padding: 0 10px 100px;
+}
+.container {
+  @include container;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 24px;
+}
+.card {
+  width: calc(25% - 12px);
+  border-radius: 10px;
+  cursor: pointer;
+  p {
+    font-weight: 700;
+    @extend .title-desc;
+    background: #fff;;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  &_image {
+    height: 320px;
+    background: #cccccc;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .categories {
+    padding: 0 10px 70px;
+  }
+  .cards {
+    width: 100%;
+  }
+  .card {
+    width: calc(33% - 10px);
+    &_image {
+      height: 250px;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .categories {
+    padding: 0 0 50px;
+  }
+  .cards {
+    padding: 0;
+  }
+  .card {
+    width: calc(50% - 8px);
+    &_image {
+      height: 200px;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .card {
+    width: 90%;
+  }
+}

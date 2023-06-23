@@ -1,0 +1,122 @@
+@import "../../../styles/variabless";
+
+.footer {
+  padding-bottom: 20px;
+}
+.container {
+  padding: 80px 10px;
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: #021934;
+  border-radius: 8px;
+}
+.content {
+  max-width: 90%;
+  margin: 0 auto;
+  color: $white-color;
+  &_top{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+    &__left {
+      width: calc(50% - 10px);
+      &_image {
+        width: 30%;
+        Image {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      &_desc {
+        margin-top: 30px;
+        @extend .description;
+      }
+    }
+    &__right {
+      width: calc(50% - 10px);
+      &_title {
+        @extend .title-desc;
+        margin-bottom: 20px;
+      }
+      &_link {
+        margin-bottom: 8px;
+        display: block;
+        @extend .description;
+      }
+      &_box {
+        display: flex;
+        justify-content: space-between;
+      }
+      &_menu {
+        display: none !important;
+      }
+    }
+  }
+  &_bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    & > div {
+      display: flex;
+      column-gap: 40px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 40px 0;
+    &_top {
+      column-gap: 5px;
+    }
+  }
+}
+@media (max-width: 950px) {
+  .content {
+    &_top {
+      &__left {
+        width: 90%;
+        &_desc {
+          display: none;
+        }
+      }
+      &__right {
+        margin-top: 20px;
+        margin: 0 auto;
+        width: 100%;
+        &_title {
+          margin-bottom: 10px;
+        }
+        &_desc {
+          margin-bottom: 2px;
+        }
+        &_box {
+          justify-content: space-around;
+        }
+      }
+    }
+    &_bottom {
+      margin-top: 20px;
+      justify-content: flex-end;
+      & > div {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .content{
+    &_top{
+      &__right{
+        &_box{
+          display: none;
+        }
+        &_menu{
+          display: inline-block !important;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

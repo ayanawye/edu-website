@@ -4,83 +4,155 @@
       "id": 1,
       "title": "Interpersonal skills - work better with others!",
       "desc": "Tanah Air Team",
-      "buttonName": "Web Developer"
+      "buttonName": "Web Developer",
+      "image": "https://www.digitalsilk.com/wp-content/uploads/2022/09/website-development-process-1.jpg"
     },
     {
       "id": 2,
-      "title": "How to become an Expert Web Developer",
+      "title": "How to become an Expert Web Developers",
       "desc": "Tanah Air Team",
-      "buttonName": "UI/UX Design"
+      "buttonName": "UI/UX Design",
+      "image": "https://promoed.ru/wp-content/uploads/2020/11/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA-%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0-2020-11-07-%D0%B2-21.00.16-1024x653.png"
     },
     {
       "id": 3,
-      "title": "User Experience Design Essentials",
+      "title": "User Experience Design Essentials for kids",
       "desc": "Tanah Air Team",
-      "buttonName": "UX Research"
+      "buttonName": "UX Research",
+      "image": "https://cdn.dribbble.com/users/4835348/screenshots/16676475/media/41b0fdefcfa0608fa9b48aa48a8ed957.png?resize=400x0"
     },
     {
       "id": 4,
-      "title": "Creating 3D Modelling in Blender ",
+      "title": "Creating 3D Modelling in Blender for kids",
       "desc": "Tanah Air Team",
-      "buttonName": "3D Design"
+      "buttonName": "3D Design",
+      "image": "https://www.digitalsilk.com/wp-content/uploads/2022/09/website-development-process-1.jpg"
     },
     {
       "id": 5,
       "title": "Interpersonal skills - work better with others!",
       "desc": "Tanah Air Team",
-      "buttonName": "Web Developer"
+      "buttonName": "Web Developer",
+      "image": "https://www.converge.it/sites/default/files/novita-apple-2022.jpg"
     },
     {
       "id": 6,
       "title": "How to become an Expert Web Developer",
       "desc": "Tanah Air Team",
-      "buttonName": "UI/UX Design"
+      "buttonName": "UI/UX Design",
+      "image": "https://welovedaily.com/media/pages/resources/design-trend-2020-3d-illustrations/2792357719-1631837774/ancient-ruins-night_4x.png"
     },
     {
       "id": 7,
-      "title": "User Experience Design Essentials",
+      "title": "User Experience Design Essentials for kids ",
       "desc": "Tanah Air Team",
-      "buttonName": "UX Research"
+      "buttonName": "UX Research",
+      "image": "https://oracle-devrel.github.io/devo-image-repository/seo-thumbnails/JavaScript---Thumbnail-1200-x-630.jpg"
     },
     {
       "id": 8,
-      "title": "Creating 3D Modelling in Blender ",
+      "title": "Creating 3D Modelling in Blender for kids ",
       "desc": "Tanah Air Team",
-      "buttonName": "3D Design"
+      "buttonName": "3D Design",
+      "image": "https://www.digitalsilk.com/wp-content/uploads/2022/09/website-development-process-1.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Creating 3D Modelling in Blender for kids ",
+      "desc": "Tanah Air Team",
+      "buttonName": "Business",
+      "image": "https://www.digitalsilk.com/wp-content/uploads/2022/09/website-development-process-1.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Creating 3D Modelling in Blender for kids ",
+      "desc": "Tanah Air Team",
+      "buttonName": "Marketing",
+      "image": "https://www.digitalsilk.com/wp-content/uploads/2022/09/website-development-process-1.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Creating 3D Modelling in Blender for kids ",
+      "desc": "Tanah Air Team",
+      "buttonName": "Business",
+      "image": "https://www.digitalsilk.com/wp-content/uploads/2022/09/website-development-process-1.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Creating 3D Modelling in Blender for kids ",
+      "desc": "Tanah Air Team",
+      "buttonName": "3D Design",
+      "image": "https://www.digitalsilk.com/wp-content/uploads/2022/09/website-development-process-1.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Creating 3D Modelling in Blender for kids ",
+      "desc": "Tanah Air Team",
+      "buttonName": "SMM",
+      "image": "https://www.digitalsilk.com/wp-content/uploads/2022/09/website-development-process-1.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Creating 3D Modelling in Blender for kids ",
+      "desc": "Tanah Air Team",
+      "buttonName": "3D Design",
+      "image": "https://www.digitalsilk.com/wp-content/uploads/2022/09/website-development-process-1.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Creating 3D Modelling in Blender for kids ",
+      "desc": "Tanah Air Team",
+      "buttonName": "Business",
+      "image": "https://www.digitalsilk.com/wp-content/uploads/2022/09/website-development-process-1.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Creating 3D Modelling in Blender for kids ",
+      "desc": "Tanah Air Team",
+      "buttonName": "Marketing",
+      "image": "https://www.digitalsilk.com/wp-content/uploads/2022/09/website-development-process-1.jpg"
     }
   ],
   "categories": [
     {
       "id": 1,
-      "title": "Art & Design"
+      "title": "Art & Design",
+      "image": "https://img.freepik.com/premium-photo/abstract-futuristic-contemporary-modern-watercolor-art_93314-4483.jpg"
     },
     {
       "id": 2,
-      "title": "Business"
+      "title": "Business",
+      "image": "https://img.freepik.com/premium-photo/abstract-futuristic-contemporary-modern-watercolor-art_93314-4483.jpg"
     },
     {
       "id": 3,
-      "title": "Copy Writing"
+      "title": "Copy Writing",
+      "image": "https://img.freepik.com/premium-photo/abstract-futuristic-contemporary-modern-watercolor-art_93314-4483.jpg"
     },
     {
       "id": 4,
-      "title": "Marketing"
+      "title": "Marketing",
+      "image": "https://img.freepik.com/premium-photo/abstract-futuristic-contemporary-modern-watercolor-art_93314-4483.jpg"
     },
     {
       "id": 5,
-      "title": "Programming"
+      "title": "Programming",
+      "image": "https://img.freepik.com/premium-photo/abstract-futuristic-contemporary-modern-watercolor-art_93314-4483.jpg"
     },
     {
       "id": 6,
-      "title": "Photography"
+      "title": "Photography",
+      "image": "https://img.freepik.com/premium-photo/abstract-futuristic-contemporary-modern-watercolor-art_93314-4483.jpg"
     },
     {
       "id": 7,
-      "title": "Videography"
+      "title": "Videography",
+      "image": "https://img.freepik.com/premium-photo/abstract-futuristic-contemporary-modern-watercolor-art_93314-4483.jpg"
     },
     {
       "id": 8,
-      "title": "Personal Development"
+      "title": "Personal Development",
+      "image": "https://img.freepik.com/premium-photo/abstract-futuristic-contemporary-modern-watercolor-art_93314-4483.jpg"
     }
   ],
   "articles": [
@@ -90,7 +162,8 @@
       "time": "3 min read",
       "title": "Interpersonal skills - work better with others!",
       "desc": "Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.",
-      "read": "Read More"
+      "read": "Read More",
+      "image": "https://d19d5sz0wkl0lu.cloudfront.net/dims4/default/44c3b03/2147483647/resize/800x%3E/quality/90/?url=https%3A%2F%2Fatd-brightspot.s3.amazonaws.com%2F72%2F04%2Fc4555a7e4fa1b6f616ea9b5377c9%2Fadobestock-101770703.jpeg"
     },
     {
       "id": 2,
@@ -98,7 +171,8 @@
       "time": "3 min read",
       "title": "Right Triangle Trigonometry Explained",
       "desc": "Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.",
-      "read": "Read More"
+      "read": "Read More",
+      "image": "https://cdn.britannica.com/02/69702-050-1C1B19A6/reciprocal-seked-Egyptian-run-ratio-Egyptians-definition.jpg"
     },
     {
       "id": 3,
@@ -106,7 +180,56 @@
       "time": "3 min read",
       "title": "2 Reasons Why You’re Confusing Chemistry ",
       "desc": "Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.",
-      "read": "Read More"
+      "read": "Read More",
+      "image": "https://www.elsevier.com/__data/assets/image/0010/1097389/Tuning-tubes-for-better-catalysts600.jpg"
     }
+  ],
+  "swiper": [
+    {
+      "id": 1,
+      "image": "https://sputnik.kg/img/07e5/0b/03/1054465356_0:0:1000:1100_1920x0_80_0_0_aece53cb86ae456784f2a796d05e907b.jpg",
+      "title": "The mentor was very friendly and guided me to get the knowledge I wanted. Thank you!",
+      "author": "KecekArif",
+      "desc": "Yang punya Surabaya nanti kapan - kapan tapi"
+    },
+    {
+      "id": 2,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFXdyvDVx3DVBIDw_DQWYtbAvF8XAxpQCFXlwPeaaMEIdMcVUOCGkFIiYB5RfXx5aYsvM&usqp=CAU",
+      "title": "huuiekydtyoiKBTITYguFGGUHJKBHUYGIJUYbjhiuehd",
+      "author": "Wyestra",
+      "desc": "Lorem ipsum dolor"
+    },
+    {
+      "id": 3,
+      "image": "https://1news.az/images/articles/2013/02/16/thumb_20130216021810220.jpg?2021-02-17+09%3A23%3A27",
+      "title": "The mentor was very friendly and guided me to get the knowledge I wanted. Thank you!",
+      "author": "Nutida",
+      "desc": "Kaif kaif laif"
+    }
+  ],
+  "footer": [
+    {"id": 1, "title": "About", "desc": [
+      {"id": 1, "name": "About us"},
+      {"id": 2, "name": "Courses"},
+      {"id": 3, "name": "Mentor"},
+      {"id": 4, "name": "Contact Us"}
+    ]},
+    {"id": 2, "title": "Support","desc": [
+      {"id": 1, "name": "Careers"},
+      {"id": 2, "name": "Help & Support"},
+      {"id": 3, "name": "Blog"}
+    ]},
+    {"id": 3, "title": "Company", "desc": [
+      {"id": 1, "name": "Privacy Policy"},
+      {"id": 2, "name": "Terms of Service"},
+      {"id": 3, "name": "Code of Conduct"}
+    ]}
+  ],
+  "tabs": [
+    { "id": 1, "title": "All" },
+    { "id": 2, "title": "Business" },
+    { "id": 3, "title": "Art & Design" },
+    { "id": 4, "title": "Development" },
+    { "id": 5, "title": "Marketing" }
   ]
 }

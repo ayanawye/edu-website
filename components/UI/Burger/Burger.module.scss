@@ -1,0 +1,55 @@
+@import "../../../styles/variabless";
+
+.menu {
+  display: none;
+  filter: drop-shadow(1px 1px 1px #215700);
+  width: 150px;
+  height: 100px;
+  z-index: 999999;
+  color: #000;
+  top: 30px;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  &_flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: $accent-color;
+    border-radius: 10px;
+    padding: 10px 20px;
+  }
+  &_btn {
+    color: $white-color;
+    font-family: inherit;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+  }
+  &_svg {
+    margin-top: 5px;
+    height: "fit-content";
+  }
+}
+.ul {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  background: $white-color;
+  li {
+    color: 6600ff;
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+  }
+}
+@media (max-width: 1100px) {
+  .menu {
+    display: flex;
+  }
+}

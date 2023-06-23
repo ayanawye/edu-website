@@ -1,0 +1,82 @@
+@import "../../../styles/variabless";
+
+.header {
+  height: 100px;
+}
+.container {
+  @include container;
+  width: 90%;
+  height: 100%;
+}
+.content {
+  height: 100%;
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  &_logo{
+    width: 15%;
+    height: 50%;
+    background: url("../../../assets/images/logo.png") no-repeat center/contain;
+  }
+  &_link {
+    width: 10%;
+    align-items: center;
+    display: flex;
+    height: 45%;
+  }
+  &_search {
+    width: 30%;
+    height: 50%;
+    background: inherit;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .content{
+    &_logo{
+      height: 60%;
+    }
+    &_mentor {
+      display: none;
+    }
+    &_link {
+      display: none;
+    }
+    &_btn {
+      display: none;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .content{
+    &_search {
+      width: 45%;
+    }
+  }
+}
+@media (max-width: 700px) {
+  .content{
+    &_logo{
+      width: 30%;
+    }
+    &_search {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .content{
+    &_logo{
+      width: 40%;
+    }
+    &_select{
+      display: none !important;
+    }
+  }
+}

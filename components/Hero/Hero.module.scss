@@ -1,0 +1,354 @@
+@import "../../styles/variabless";
+
+.hero {
+  height: calc(100vh - 100px);
+}
+.container {
+  max-width: 95%;
+  padding: 0 10px;
+  margin: 0 auto;
+  height: 100%;
+}
+.content {
+  padding: 0 5%;
+  color: $white-color;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  background: url("../../assets/images/background.png") no-repeat center/cover;
+  &_left {
+    width: 50%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    &__title {
+      font-size: 64px;
+      line-height: 88px;
+      color: $white-color;
+    }
+    &__aboutUs {
+      margin-top: 24px;
+      @extend .description;
+    }
+    &__search {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 0 3%;
+      height: 70px;
+      margin-top: 60px;
+    }
+    &__btn {
+      width: 25%;
+      height: 80%;
+      position: relative;
+    }
+    &__benefits {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      column-gap: 10px;
+      & > div {
+        display: flex;
+        width: calc(33% - 7px);
+        align-items: center;
+        column-gap: 5px;
+        p {
+          @extend .description;
+        }
+      }
+    }
+  }
+  &_right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    &__bg {
+      height: 90%;
+      width: 90%;
+      background: url("https://mentorcolor.org/images/woman-glasses.png") center/contain no-repeat;
+      border-radius: 8px;
+    }
+    &__icon {
+      width: 64px;
+      height: 64px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      position: absolute;
+      box-shadow: 0 0 30px #021934;
+      &:first-child {
+        background: #4586d6;
+        left: 25%;
+        top: 20%;
+      }
+      &:nth-child(2) {
+        background: #f72585;
+        transform: rotate(29deg);
+        right: 20px;
+        top: 270px;
+      }
+      &:nth-child(3) {
+        background: #021934;
+        transform: rotate(-19.5deg);
+        left: 20%;
+        top: 70%;
+      }
+    }
+    &__box {
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+      background: $white-color;
+      color: $accent-color;
+      padding: 16px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 0 30px #021934;
+      &_title {
+        @extend .title-desc;
+      }
+      p {
+        @extend .description;
+        margin-bottom: 8px;
+      }
+      &_star {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 8px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1350px) {
+  .content {
+    padding: 0 3%;
+    &_left {
+      &__title {
+        font-size: 60px;
+        line-height: 80px;
+      }
+    }
+  }
+}
+@media (max-width: 1250px) {
+  .content {
+    &_left {
+      &__title {
+        font-size: 56px;
+        line-height: 70px;
+      }
+      &__search {
+        height: 60px;
+        margin-top: 45px;
+      }
+    }
+    &_right {
+      &__box {
+        bottom: 30px;
+        right: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 1150px) {
+  .content {
+    &_left {
+      width: 55%;
+      &__title {
+        font-size: 54px;
+        line-height: 70px;
+      }
+    }
+    &_right {
+      width: 45%;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    &_left {
+      width: 90%;
+      height: 65%;
+      margin: 0 auto;
+      &__title {
+        font-size: 50px;
+        line-height: 65px;
+      }
+      &__benefits {
+        margin-top: 5vh;
+      }
+    }
+    &_right {
+      height: 35%;
+      width: 100%;
+      justify-content: center;
+      &__icon {
+        width: 50px;
+        height: 50px;
+        box-shadow: 0 0 30px #4586d6;
+        &:first-child {
+          left: 10%;
+          top: 15%;
+        }
+        &:nth-child(2) {
+          right: 68%;
+          top: 25%;
+        }
+        &:nth-child(3) {
+          left: 15%;
+          top: 55%;
+        }
+      }
+      &_box {
+        box-shadow: 0 0 30px #4586d6;
+        bottom: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .content {
+    &_left {
+      height: 70%;
+      &__title {
+        font-size: 42px;
+        line-height: 50px;
+      }
+      &__search {
+        height: 55px;
+        margin-top: 35px;
+      }
+    }
+    &_right {
+      height: 30%;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .content {
+    &_left {
+      &__title {
+        font-size: 30px;
+        line-height: 40px;
+      }
+      &__aboutUs {
+        margin-top: 10px;
+      }
+      &__search {
+        height: 50px;
+        margin-top: 20px;
+      }
+    }
+    &_right {
+      &__icon {
+        width: 40px;
+        height: 40px;
+      }
+      &__box {
+        padding: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .content {
+    &_left {
+      &__title {
+        font-size: 30px;
+        line-height: 40px;
+      }
+      &__about {
+        margin-top: 10px;
+      }
+    }
+    &_right {
+      &__box {
+        display: none;
+      }
+      &__icon {
+        &:first-child {
+          left: 5%;
+          top: 10%;
+        }
+        &:nth-child(2) {
+          right: 10%;
+          top: 25%;
+        }
+        &:nth-child(3) {
+          left: 15%;
+          top: 50%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 460px) {
+  .content {
+    &_left {
+      height: 65%;
+      &__title {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 20px;
+      }
+      &__aboutUs {
+        display: none;
+      }
+      &__benefits {
+        margin-top: 60px;
+      }
+    }
+    &_right {
+      height: 35%;
+      &__box {
+        display: none;
+      }
+      &__icon {
+        &:first-child {
+          left: 5%;
+          top: 10%;
+        }
+        &:nth-child(2) {
+          right: 10%;
+          top: 25%;
+        }
+        &:nth-child(3) {
+          left: 15%;
+          top: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .content {
+    &_right {
+      &__bg {
+        height: 35%;
+        background: none;
+      }
+      &__icon {
+        width: 50px;
+        height: 50px;
+        &:first-child {
+          left: 15%;
+        }
+        &:nth-child(3) {
+          left: 40%;
+        }
+      }
+    }
+  }
+}
