@@ -3,8 +3,8 @@ import MyButton from "../UI/MyButton/MyButton";
 import s from "./Courses.module.scss";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 import { useSelector } from "react-redux";
-import CoursesList from "../CoutsesList/CoursesList";
 import { motion } from "framer-motion";
+import CoursesList from "../CoutsesList/CoursesList";
 
 const Courses = () => {
   const [count, setCounte] = useState(8);
@@ -35,13 +35,23 @@ const Courses = () => {
   };
 
   return (
-    <div className={s.courses}>
+    <div initial="hidden" whileInView="visible" className={s.courses}>
       <div className="container">
         <div className={s.content}>
           <div className={s.content_title}>
-            <h2>Trending Courses</h2>
+            <motion.h2
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 0.8 }}
+              variants={{
+                hidden: { scale: 0, opacity: 0 },
+                visible: { scale: 1, opacity: 1 },
+              }}
+            >
+              Trending Course
+            </motion.h2>
           </div>
-          <motion.div>
+          <motion.div initial="hidden" whileInView="visible">
             <Tabs variant="unstyled">
               <TabList className={s.content_box}>
                 {tab.map((el) => (

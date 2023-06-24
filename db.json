@@ -117,42 +117,42 @@
     {
       "id": 1,
       "title": "Art & Design",
-      "image": "https://img.freepik.com/premium-photo/abstract-futuristic-contemporary-modern-watercolor-art_93314-4483.jpg"
+      "image": "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg"
     },
     {
       "id": 2,
       "title": "Business",
-      "image": "https://img.freepik.com/premium-photo/abstract-futuristic-contemporary-modern-watercolor-art_93314-4483.jpg"
+      "image": "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg"
     },
     {
       "id": 3,
       "title": "Copy Writing",
-      "image": "https://img.freepik.com/premium-photo/abstract-futuristic-contemporary-modern-watercolor-art_93314-4483.jpg"
+      "image": "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg"
     },
     {
       "id": 4,
       "title": "Marketing",
-      "image": "https://img.freepik.com/premium-photo/abstract-futuristic-contemporary-modern-watercolor-art_93314-4483.jpg"
+      "image": "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg"
     },
     {
       "id": 5,
       "title": "Programming",
-      "image": "https://img.freepik.com/premium-photo/abstract-futuristic-contemporary-modern-watercolor-art_93314-4483.jpg"
+      "image": "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg"
     },
     {
       "id": 6,
       "title": "Photography",
-      "image": "https://img.freepik.com/premium-photo/abstract-futuristic-contemporary-modern-watercolor-art_93314-4483.jpg"
+      "image": "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg"
     },
     {
       "id": 7,
       "title": "Videography",
-      "image": "https://img.freepik.com/premium-photo/abstract-futuristic-contemporary-modern-watercolor-art_93314-4483.jpg"
+      "image": "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg"
     },
     {
       "id": 8,
-      "title": "Personal Development",
-      "image": "https://img.freepik.com/premium-photo/abstract-futuristic-contemporary-modern-watercolor-art_93314-4483.jpg"
+      "title": "Development",
+      "image": "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg"
     }
   ],
   "articles": [
@@ -201,6 +201,27 @@
     },
     {
       "id": 3,
+      "image": "https://1news.az/images/articles/2013/02/16/thumb_20130216021810220.jpg?2021-02-17+09%3A23%3A27",
+      "title": "The mentor was very friendly and guided me to get the knowledge I wanted. Thank you!",
+      "author": "Nutida",
+      "desc": "Kaif kaif laif"
+    },
+    {
+      "id": 4,
+      "image": "https://1news.az/images/articles/2013/02/16/thumb_20130216021810220.jpg?2021-02-17+09%3A23%3A27",
+      "title": "The mentor was very friendly and guided me to get the knowledge I wanted. Thank you!",
+      "author": "Nutida",
+      "desc": "Kaif kaif laif"
+    },
+    {
+      "id": 5,
+      "image": "https://1news.az/images/articles/2013/02/16/thumb_20130216021810220.jpg?2021-02-17+09%3A23%3A27",
+      "title": "The mentor was very friendly and guided me to get the knowledge I wanted. Thank you!",
+      "author": "Nutida",
+      "desc": "Kaif kaif laif"
+    },
+    {
+      "id": 6,
       "image": "https://1news.az/images/articles/2013/02/16/thumb_20130216021810220.jpg?2021-02-17+09%3A23%3A27",
       "title": "The mentor was very friendly and guided me to get the knowledge I wanted. Thank you!",
       "author": "Nutida",

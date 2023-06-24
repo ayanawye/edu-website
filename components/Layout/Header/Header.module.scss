@@ -34,6 +34,9 @@
     font-size: 16px;
     line-height: 24px;
   }
+  &_select{
+    display: block !important;
+  }
 }
 
 @media (max-width: 1100px) {

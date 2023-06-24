@@ -5,7 +5,7 @@
 }
 .container {
   padding: 80px 10px;
-  max-width: 90%;
+  width: 90%;
   margin: 0 auto;
   background-color: #021934;
   border-radius: 8px;
@@ -35,10 +35,6 @@
     }
     &__right {
       width: calc(50% - 10px);
-      &_title {
-        @extend .title-desc;
-        margin-bottom: 20px;
-      }
       &_link {
         margin-bottom: 8px;
         display: block;
@@ -48,8 +44,16 @@
         display: flex;
         justify-content: space-between;
       }
-      &_menu {
+      select {
         display: none !important;
+        padding: 10px;
+        border-radius: 10px;
+        background: rgba($color: #fff, $alpha: 0.2);
+        option{
+          color: #021934;
+          background: rgba($color: #fff, $alpha: 0.2) !important;
+
+        }
       }
     }
   }
@@ -82,12 +86,8 @@
         }
       }
       &__right {
-        margin-top: 20px;
-        margin: 0 auto;
+        margin: 20px auto 0;
         width: 100%;
-        &_title {
-          margin-bottom: 10px;
-        }
         &_desc {
           margin-bottom: 2px;
         }
@@ -112,9 +112,14 @@
         &_box{
           display: none;
         }
-        &_menu{
+        &_select{
+          display: flex;
+          flex-wrap: wrap;
+        }
+        select{
           display: inline-block !important;
-          margin-right: 10px;
+          margin-right: 20px;
+          margin-bottom: 20px;
         }
       }
     }
