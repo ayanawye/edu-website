@@ -11,7 +11,7 @@ const Mentor = () => {
       autoPlay={{ delay: 2000 }}
       className={s.mentor}
     >
-      <div className={s.container}>
+      <div className="container">
         <div className={s.content}>
           <motion.div
             initial="hidden"

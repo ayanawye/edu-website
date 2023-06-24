@@ -19,7 +19,7 @@ const LatestBlog = () => {
   const { articles } = useSelector((state) => state.articles);
   return (
     <motion.div initial="hidden" whileInView="visible" className={s.late}>
-      <div className={s.container}>
+      <div className="container">
         <h2>The Latest Blog</h2>
         <div className={s.cards}>
           {articles.map((el, index) => (

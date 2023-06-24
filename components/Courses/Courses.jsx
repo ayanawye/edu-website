@@ -36,7 +36,7 @@ const Courses = () => {
 
   return (
     <div className={s.courses}>
-      <div className={s.container}>
+      <div className="container">
         <div className={s.content}>
           <div className={s.content_title}>
             <h2>Trending Courses</h2>

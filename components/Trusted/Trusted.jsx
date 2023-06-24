@@ -8,7 +8,7 @@ import { images } from "../../imgData";
 const Trusted = () => {
   return (
     <div className={s.trust}>
-      <div className={s.container}>
+      <div className="container">
         <div className={s.content}>
           <div className={s.content_title}>
           <h2>Trusted by Company</h2>
