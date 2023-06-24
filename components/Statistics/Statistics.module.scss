@@ -23,6 +23,10 @@
     flex-direction: column;
     align-items: center;
   }
+  &_number{
+    display: flex;
+    align-items: center;
+  }
   .__num {
     animation-fill-mode: forwards;
     counter-reset: num var(--num);

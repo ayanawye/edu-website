@@ -64,7 +64,7 @@ const Statistics = () => {
             <>
               <div>
                 <BsFillCollectionPlayFill fill="#F72585" size={50} />
-                <div style={{ display: "flex", alignItems: "center" }}>
+                <div className={s.content_number}>
                   <motion.h2
                     whileInView="visible"
                     custom={1}
@@ -85,7 +85,7 @@ const Statistics = () => {
                 }}
               >
                 <BsFillPeopleFill fill="#F72585" size={50} />
-                <div style={{ display: "flex", alignItems: "center" }}>
+                <div className={s.content_number}>
                 <motion.h2
                     whileInView="visible"
                     custom={2}
@@ -106,7 +106,7 @@ const Statistics = () => {
                 }}
               >
                 <BiUserCircle fill="#F72585" size={50} />
-                <motion.div style={{ display: "flex", alignItems: "center" }}>
+                <motion.div className={s.content_number}>
                 <motion.h2
                     whileInView="visible"
                     custom={3}
@@ -127,7 +127,7 @@ const Statistics = () => {
                 }}
               >
                 <BsFlag fill="#F72585" size={50} />
-                <motion.div style={{ display: "flex", alignItems: "center" }}>
+                <motion.div className={s.content_number}>
                 <motion.h2
                     whileInView="visible"
                     custom={4}

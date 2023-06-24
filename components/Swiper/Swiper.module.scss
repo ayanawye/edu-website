@@ -15,6 +15,12 @@
   &_image {
     width: calc(35% - 20px);
     height: 380px;
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
   }
   &_text {
     width: calc(65% - 20px);

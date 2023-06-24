@@ -3,7 +3,7 @@ import s from "./LatestBlog.module.scss";
 import { useSelector } from "react-redux";
 import { motion } from "framer-motion";
 
-const textAnimation = {
+const cardAnimation = {
   hidden: {
     opacity: 0,
     scale: 0,
@@ -25,7 +25,7 @@ const LatestBlog = () => {
           {articles.map((el, index) => (
             <motion.div
               custom={index}
-              variants={textAnimation}
+              variants={cardAnimation}
               key={el.id}
               className={s.card}
             >

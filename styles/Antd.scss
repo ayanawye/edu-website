@@ -45,11 +45,10 @@
   height: 100%;
   object-fit: cover;
 }
-.css-18esm8n{
-  color: #000 !important;
-}
+
 .chakra-select__wrapper{
   width: 10% !important;
+  color: #000 !important;
 }
 
 @media (max-width: 1700px) {
@@ -78,14 +77,14 @@
   .swiper-slide{
     padding: 0 50px;
   }
+  .chakra-select__wrapper{
+    width: 20% !important;
+  }
 }
 @media (max-width: 800px) {
   h2{
     font-size: 42px;
     line-height: 45px;
-  }
-  .chakra-select__wrapper{
-    width: 20% !important;
   }
 }
 
@@ -104,6 +103,7 @@
     line-height: 35px;
   }
   .chakra-select__wrapper{
+    width: 10% !important;
     display: none;
   }
 }

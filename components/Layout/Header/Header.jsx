@@ -4,16 +4,34 @@ import MyButton from "../../UI/MyButton/MyButton";
 import { Menu, MenuButton, MenuList, MenuItem, Button } from "@chakra-ui/react";
 import Burger from "../../UI/Burger/Burger";
 import { BiSearch } from "react-icons/bi";
-import { Select } from '@chakra-ui/react'
+import { Select } from "@chakra-ui/react";
+import { motion } from "framer-motion";
+
+const containerAnimation = {
+  hidden: {
+    opacity: 0,
+    scale: 0,
+  },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: { delay: 2.5 }
+  },
+};
 
 const Header = () => {
   return (
-    <header className={`${s.header}`}>
-      <div className={s.container}>
+    <motion.header
+      initial="hidden"
+      whileInView="visible"
+      viewport={{once: true}}
+      className={`${s.header}`}
+    >
+      <motion.div className={s.container} variants={containerAnimation}>
         <div className={s.content} style={{ fontWeight: 600 }}>
           <div className={s.content_logo}></div>
           <Input
-          className={s.content_search}
+            className={s.content_search}
             placeholder="Search bar"
             suffix={<BiSearch size={20} />}
           />
@@ -33,8 +51,8 @@ const Header = () => {
           </div>
           <Burger />
         </div>
-      </div>
-    </header>
+      </motion.div>
+    </motion.header>
   );
 };
 

@@ -2,9 +2,9 @@ import s from "./Swiper.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-
 import { Autoplay, Navigation, Pagination } from "swiper";
 import { useSelector } from "react-redux";
+import { motion } from "framer-motion";
 
 const Swip = () => {
   const { swipers } = useSelector((state) => state.swiper);
@@ -14,30 +14,41 @@ const Swip = () => {
         <div className={s.content}>
           <Swiper
             style={{
-              "--swiper-navigation-color": "#1C3554",
-              "--swiper-navigation-size": "20px",
+              "--swiper-navigation-color": "#93A1C8",
+              "--swiper-navigation-size": "30",
             }}
-            speed={2000}
+            loop
+            speed={1100}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+            }}
             navigation={true}
-            pagination={{
-              clickable: true,
-            }}
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
-            modules={[Navigation, Pagination, Autoplay]}
+            modules={[Navigation, Autoplay]}
             className="mySwiper"
           >
-            {
-              swipers.map((swip) => (
-                <SwiperSlide key={swip.id} className={s.slide}>
-                  <div className={s.slide_image} style={{background: `url("${swip.image}") no-repeat center/contain`}}></div>
+            {swipers.map((swip) => (
+              <SwiperSlide key={swip.id}>
+                <motion.div
+                  whileInView="visible"
+                  initial="hidden"
+                  variants={{
+                    hidden: { scale: 0.6 },
+                    visible: { scale: 1 },
+                  }}
+                  className={s.slide}
+                >
+                  <div className={s.slide_image}>
+                    <img src={swip.image} alt="image" />
+                  </div>
                   <div className={s.slide_text}>
                     <p>{swip.title}</p>
                     <p>{swip.author}</p>
                     <p>{swip.desc}</p>
                   </div>
-                </SwiperSlide>
-              ))
-            }
+                </motion.div>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>

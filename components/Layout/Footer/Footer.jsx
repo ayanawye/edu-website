@@ -4,21 +4,30 @@ import Image from "next/image";
 import { useSelector } from "react-redux";
 import { Menu, MenuButton, MenuList, MenuItem, Button } from "@chakra-ui/react";
 import { AiOutlineDown } from "react-icons/ai";
+import { motion } from "framer-motion";
+import { Select } from "@chakra-ui/react";
+
+const containerAnimation = {
+  hidden: {
+    opacity: 0,
+    scale: 0.5,
+  },
+  visible: {
+    opacity: 1,
+    scale: 1,
+  },
+};
 
 const Footer = () => {
   const { footer } = useSelector((state) => state.footerInfo);
   return (
-    <footer className={s.footer}>
-      <div className={s.container}>
+    <motion.footer initial="hidden" whileInView="visible" className={s.footer}>
+      <motion.div variants={containerAnimation} className={s.container}>
         <div className={s.content}>
           <div className={s.content_top}>
             <div className={s.content_top__left}>
               <div className={s.content_top__left_image}>
-                <Image
-                  src={Logo}
-                  alt="logo"
-                  placeholder="blur"
-                />
+                <Image src={Logo} alt="logo" placeholder="blur" />
               </div>
               <p className={s.content_top__left_desc}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
@@ -38,37 +47,34 @@ const Footer = () => {
                     ))}
                   </div>
                 ))}
-                </div>
-                {footer.map((el) => (
-                  <Menu key={el.id}>
-                    <MenuButton
-                      className={`${s.content_top__right_title} ${s.content_top__right_menu}`}
-                      as={Button}
-                      rightIcon={<AiOutlineDown />}
-                    >
-                      {el.title}
-                    </MenuButton>
-                    <MenuList>
-                      {el.desc.map((li) => (
-                        <MenuItem className={s.info} key={li.id}>
-                          {li.name}
-                        </MenuItem>
-                      ))}
-                    </MenuList>
-                  </Menu>
-                ))}
+              </div>
+              <div className={s.content_top__right_select}>
+              {footer.map((el) => (
+                  <select
+                    key={el.id}
+                    placeholder={`${el.title}`}
+                    className={s.content_top__right_title}
+                  >
+                    {el.desc.map((li) => (
+                      <option className={s.info} key={li.id}>
+                        {li.name}
+                      </option>
+                    ))}
+                  </select>
+              ))}
+              </div>
             </div>
           </div>
           <div className={s.content_bottom}>
             <div className={s.content_bottom__right}>
-              <p>Privacy Policy</p>
-              <p>Terms and Condition</p>
+              <a>Privacy Policy</a>
+              <a>Terms and Condition</a>
             </div>
-            <p>@2020 TanahAir Studio. All rights reserved.</p>
+            <a>@2020 TanahAir Studio. All rights reserved.</a>
           </div>
         </div>
-      </div>
-    </footer>
+      </motion.div>
+    </motion.footer>
   );
 };
 

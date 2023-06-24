@@ -15,15 +15,25 @@ import { useRef } from "react";
 
 const textAnimation = {
   hidden: {
-    x: -50,
+    x: -100,
     opacity: 0,
-    transition: { duration: 2 },
   },
   visible: (custom) => ({
     x: 0,
     opacity: 1,
-    transition: { delay: custom * 1, duration: 0.6 },
+    transition: { delay: custom * 1, duration: 0.3 },
   }),
+};
+const containerAnimation = {
+  hidden: {
+    opacity: 0,
+    scale: 0,
+  },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: { delay: 2.5},
+  },
 };
 
 const Hero = () => {
@@ -53,21 +63,21 @@ const Hero = () => {
     <motion.section
       initial="hidden"
       whileInView="visible"
-      transition={{ duration: 2 }}
+      viewport={{once: true}}
       className={s.hero}
     >
-      <div className={s.container}>
+      <motion.div className={s.container} variants={containerAnimation}>
         <div className={s.content}>
           <div className={s.content_left}>
             <motion.h1
-              custom={1}
+              custom={3}
               variants={textAnimation}
               className={s.content_left__title}
             >
               Find the Best Courses and Amazing Mentor
             </motion.h1>
             <motion.p
-              custom={2}
+              custom={3.7}
               variants={textAnimation}
               className={s.content_left__aboutUs}
             >
@@ -100,11 +110,11 @@ const Hero = () => {
               </Space.Compact>
             </div>
             <div className={s.content_left__benefits}>
-              <motion.div custom={3} variants={textAnimation}>
+              <motion.div custom={4} variants={textAnimation}>
                 <Image src={Alarm} alt="img" />
                 <p>Life Time Acces</p>
               </motion.div>
-              <motion.div custom={4} variants={textAnimation}>
+              <motion.div custom={4.5} variants={textAnimation}>
                 <Image src={User} alt="img" />
                 <p>Expert Mentor</p>
               </motion.div>
@@ -179,7 +189,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </motion.section>
   );
 };

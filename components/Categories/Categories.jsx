@@ -1,6 +1,8 @@
 import { useSelector } from "react-redux";
 import s from "./Categories.module.scss";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import Image from "next/image";
 
 const textAnimation = {
   hidden: {
@@ -16,7 +18,7 @@ const textAnimation = {
 
 const Categories = () => {
   const { categories } = useSelector((state) => state.categories);
-  
+
   return (
     <motion.div initial="hidden" whileInView="visible" className={s.categories}>
       <div className="container">
@@ -24,17 +26,15 @@ const Categories = () => {
         <div className={s.cards}>
           {categories.map((el, index) => (
             <motion.div
+              whileHover={{ rotateY: 180 }}
+              transition={{ duration: 0.1 }}
               custom={index}
               variants={textAnimation}
               key={el.id}
-              className={s.card}
+              className={`${s.card}`}
             >
-              <div
-                className={s.card_image}
-                style={{
-                  background: `url(${el.image}) no-repeat center/cover`,
-                }}
-              >
+              <div className={s.card_image}>
+                <img src={el.image} alt="image"/>
                 <p>{el.title}</p>
               </div>
             </motion.div>
@@ -42,7 +42,7 @@ const Categories = () => {
         </div>
       </div>
     </motion.div>
-  )
+  );
 };
 
 export default Categories;
