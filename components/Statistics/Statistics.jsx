@@ -58,7 +58,7 @@ const Statistics = () => {
     whileInView="visible"
       className={s.static}
     >
-      <div className={s.container}>
+      <div className="container">
         <div className={s.content}>
           {inView && (
             <>

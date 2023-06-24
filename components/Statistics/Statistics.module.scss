@@ -5,13 +5,9 @@
   initial-value: 0;
   inherits: false;
 }
-
 .static {
   padding: 0 10px;
   position: relative;
-}
-.container {
-  @include container;
 }
 .content {
   display: flex;

@@ -3,9 +3,6 @@
 .late {
   padding: 50px 10px 160px;
 }
-.container {
-  @include container;
-}
 .cards {
   display: flex;
   justify-content: center;

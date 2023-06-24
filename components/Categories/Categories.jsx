@@ -19,7 +19,7 @@ const Categories = () => {
   
   return (
     <motion.div initial="hidden" whileInView="visible" className={s.categories}>
-      <div className={s.container}>
+      <div className="container">
         <h2>Top Categories</h2>
         <div className={s.cards}>
           {categories.map((el, index) => (

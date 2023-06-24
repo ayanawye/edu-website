@@ -10,7 +10,7 @@ const Swip = () => {
   const { swipers } = useSelector((state) => state.swiper);
   return (
     <div className={s.swip}>
-      <div className={s.container}>
+      <div className="container">
         <div className={s.content}>
           <Swiper
             style={{
